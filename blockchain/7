@@ -1,0 +1,9 @@
+{
+    "borrower": "Andrew",
+    "lender": "Kate",
+    "amount": 100,
+    "prev_block": {
+        "hash": "0bb444218ad3b1ae1ae50d2d8bf23a0c",
+        "filename": "6"
+    }
+}
