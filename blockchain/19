@@ -1,0 +1,9 @@
+{
+    "borrower": "Valli",
+    "lender": "Ursula",
+    "amount": "6000",
+    "prev_block": {
+        "hash": "0f93cc65e1ccf0cdb40c37aa0713da88",
+        "filename": "18"
+    }
+}

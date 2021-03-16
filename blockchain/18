@@ -1,0 +1,9 @@
+{
+    "borrower": "Vania",
+    "lender": "Marcia",
+    "amount": "4000",
+    "prev_block": {
+        "hash": "1d716f8a9571f72a646b407f3337cfb9",
+        "filename": "17"
+    }
+}
