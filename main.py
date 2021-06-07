@@ -8,11 +8,11 @@ app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
-        borrower = request.form.get('borrower')
-        lender = request.form.get('lender')
-        amount = request.form.get('amount')
+        patient = request.form.get('patient')
+        dateofbirth = request.form.get('dateofbirth')
+        address = request.form.get('address')
 
-        write_block(borrower=borrower, lender=lender, amount=amount)
+        write_block(patient=patient, dateofbirth=dateofbirth, address=address)
        
 
     return render_template('index.html')

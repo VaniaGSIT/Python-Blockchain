@@ -34,15 +34,15 @@ def check_integrity():
     return results
 
 
-def write_block(borrower, lender, amount):
+def write_block(patient, dateofbirth, address):
 
     blocks_count = len(os.listdir(BLOCKCHAIN_DIR))
     prev_block = str(blocks_count)
 
     data = {
-    "borrower": borrower,
-    "lender": lender,
-    "amount": amount,
+    "patient": patient,
+    "dateofbirth": dateofbirth,
+    "address": address,
     "prev_block": {
         "hash": get_hash(prev_block),
         "filename": prev_block
