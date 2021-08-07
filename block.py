@@ -34,7 +34,7 @@ def check_integrity():
     return results
 
 
-def write_block(patient, dateofbirth, address):
+def write_block(patient, dateofbirth, address, cervical):
 
     blocks_count = len(os.listdir(BLOCKCHAIN_DIR))
     prev_block = str(blocks_count)
@@ -43,6 +43,7 @@ def write_block(patient, dateofbirth, address):
     "patient": patient,
     "dateofbirth": dateofbirth,
     "address": address,
+    "cervical": cervical,
     "prev_block": {
         "hash": get_hash(prev_block),
         "filename": prev_block

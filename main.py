@@ -11,8 +11,9 @@ def index():
         patient = request.form.get('patient')
         dateofbirth = request.form.get('dateofbirth')
         address = request.form.get('address')
+        cervical = request.form.get('cervical')
 
-        write_block(patient=patient, dateofbirth=dateofbirth, address=address)
+        write_block(patient=patient, dateofbirth=dateofbirth, address=address,cervical=cervical)
        
 
     return render_template('index.html')
